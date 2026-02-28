@@ -77,6 +77,41 @@ export default function App() {
         ::-webkit-scrollbar-track { background: var(--bg); }
         ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--fg-muted); }
+        /* Responsive adjustments for small screens */
+        @media (max-width: 900px) {
+          body, a, button { cursor: auto !important; }
+          /* Collapse sidebar into a top bar */
+          aside {
+            position: relative !important;
+            width: 100% !important;
+            left: 0 !important;
+            top: 0 !important;
+            bottom: auto !important;
+            border-right: none !important;
+            border-bottom: 1px solid var(--border) !important;
+            padding: 12px 16px !important;
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            z-index: auto !important;
+          }
+          aside nav { display: flex !important; gap: 8px; overflow:auto; }
+          aside nav a { padding: 6px 8px !important; font-size: 11px !important; }
+          /* Main content should fill width */
+          main { margin-left: 0 !important; padding: 20px !important; max-width: 100% !important; }
+          /* Reduce large section padding */
+          section { padding: 60px 0 !important; }
+          /* Convert grid columns to single column */
+          [style*="grid-template-columns"] { display: block !important; grid-template-columns: none !important; }
+          [style*="display: grid"] { display: block !important; }
+          /* Tone down oversized headings on small devices */
+          h1 { font-size: clamp(28px, 8vw, 48px) !important; }
+          h2 { font-size: clamp(20px, 6vw, 32px) !important; }
+          h3 { font-size: clamp(16px, 4vw, 20px) !important; }
+          /* Hide the custom cursor on touch/small screens */
+          .cursor-dot, .cursor-ring { display: none !important; }
+        }
       `}</style>
 
       {/* CSS variable injection */}

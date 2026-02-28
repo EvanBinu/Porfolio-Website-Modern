@@ -63,7 +63,7 @@ export function Hero() {
             onMouseLeave={e => { e.currentTarget.style.borderColor = "var(--border)"; e.currentTarget.style.color = "var(--fg)"; }}>
             Get in Touch
           </a>
-          <a href="#"
+          <a href="/resume.pdf" download="EvanResume2026.pdf"
             style={{ display: "inline-flex", alignItems: "center", gap: 8, padding: "12px 28px", background: "transparent", color: "var(--fg-muted)", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", transition: "all 0.2s" }}
             onMouseEnter={e => e.currentTarget.style.color = "var(--fg)"}
             onMouseLeave={e => e.currentTarget.style.color = "var(--fg-muted)"}>

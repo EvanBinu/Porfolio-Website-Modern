@@ -4,7 +4,7 @@ import { Section, SectionTitle, FadeIn } from "../ui";
 export function Achievements() {
   return (
     <Section id="achievements">
-      <SectionTitle num="05" title="Achievements" />
+      <SectionTitle num="05" title="Achievements & Events" />
       <div style={{ display: "grid", gridTemplateColumns: "repeat(2, 1fr)", gap: 24 }}>
         {ME.achievements.map((a, i) => (
           <FadeIn key={a.title} delay={i * 0.1}>

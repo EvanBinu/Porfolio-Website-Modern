@@ -95,10 +95,10 @@ export const ME = {
     },
   ],
   achievements: [
-    { icon: "01", title: "HackMIT 2023 — 1st Place", body: "AI-powered accessibility tool for visually impaired developers. Beat 300+ teams." },
-    { icon: "02", title: "Google Summer of Code 2022", body: "Selected contributor for TensorFlow.js ecosystem improvements." },
-    { icon: "03", title: "AWS Certified Architect", body: "Professional-level certification. Solutions architecture at scale." },
-    { icon: "04", title: "4.2k GitHub Stars", body: "Open source project reached 4.2k stars in 90 days. Featured on GitHub Trending." },
+    { icon: "01", title: "EpochOn 2.0 Agentic Hackathon – Winner", body: "Won a 12-hour hackathon with Team Saraswati by building Nyaya-Sarathi, a multi-agent AI grievance and legal assistance system with IVR-based offline access." },
+    { icon: "02", title: "Vidyut Hackathon - participation", body: "Participated with Team Exception Handlers, developing a real-time call monitoring and translation system to enhance security." },
+    { icon: "03", title: "OLabs Hackathon - participation", body: "Participated with Team PH4NTOM DIV3R5, enhancing OLabs with role-based access control, AES-based password encryption, and audit logging." },
+    { icon: "04", title: "Powerlifting Achievements", body: "Secured Silver Medals in the 93kg category at the Kerala State Equipped Powerlifting Championship (Junior), Kollam District Powerlifting Championship (Junior), and Kerala State Equipped Bench Press Championship (Sub-Junior) and many more." },
   ],
   education: {
     school: "Amrita Vishwa Vidyapeetham",

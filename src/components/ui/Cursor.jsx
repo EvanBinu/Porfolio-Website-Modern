@@ -27,8 +27,8 @@ export function Cursor() {
 
   return (
     <>
-      <div ref={dot} style={{ position: "fixed", top: 0, left: 0, width: 8, height: 8, borderRadius: "50%", background: "var(--accent)", pointerEvents: "none", zIndex: 9999, transition: "opacity 0.3s" }} />
-      <div ref={ring} style={{ position: "fixed", top: 0, left: 0, width: 40, height: 40, borderRadius: "50%", border: "1px solid var(--accent)", pointerEvents: "none", zIndex: 9998, opacity: 0.5 }} />
+      <div className="cursor-dot" ref={dot} style={{ position: "fixed", top: 0, left: 0, width: 8, height: 8, borderRadius: "50%", background: "var(--accent)", pointerEvents: "none", zIndex: 9999, transition: "opacity 0.3s" }} />
+      <div className="cursor-ring" ref={ring} style={{ position: "fixed", top: 0, left: 0, width: 40, height: 40, borderRadius: "50%", border: "1px solid var(--accent)", pointerEvents: "none", zIndex: 9998, opacity: 0.5 }} />
     </>
   );
 }
