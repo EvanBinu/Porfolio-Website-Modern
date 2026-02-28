@@ -24,14 +24,32 @@ Actively seeking Software Engineering roles focused on building scalable, impact
           </FadeIn>
         </div>
         <FadeIn delay={0.2}>
-          <div style={{ border: "1px solid var(--border)", borderRadius: 8, overflow: "hidden" }}>
-            {[["Email", ME.email], ["GitHub", ME.github], ["LinkedIn", ME.linkedin]].map(([k, v], i) => (
-              <div key={k} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "20px 24px", borderBottom: i < 2 ? "1px solid var(--border)" : "none" }}>
+        <div style={{ border: "1px solid var(--border)", borderRadius: 8, overflow: "hidden" }}>
+            {[["Email", ME.email], ["GitHub", ME.github], ["LinkedIn", ME.linkedin], ["LeetCode", ME.leetcode]]
+            .map(([k, v], i, arr) => (
+                <div
+                key={k}
+                style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "20px 24px",
+                    borderBottom: i < arr.length - 1 ? "1px solid var(--border)" : "none"
+                }}
+                >
                 <Label>{k}</Label>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: "var(--fg-secondary)" }}>{v}</span>
-              </div>
+                <span
+                    style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 11,
+                    color: "var(--fg-secondary)"
+                    }}
+                >
+                    {v}
+                </span>
+                </div>
             ))}
-          </div>
+        </div>
         </FadeIn>
       </div>
     </Section>

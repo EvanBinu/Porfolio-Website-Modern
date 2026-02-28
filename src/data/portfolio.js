@@ -8,6 +8,7 @@ export const ME = {
   email: "evanbinu17@gmail.com",
   github: "github.com/EvanBinu",
   linkedin: "linkedin.com/in/EvanBinu17",
+  leetcode: "leetcode.com/u/EvanBinu17/",
   tagline: "I build scalable, intelligent systems — solving complex problems from the infrastructure layer to the user interface.",
 
     about: [

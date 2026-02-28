@@ -62,7 +62,7 @@ export function Sidebar({ activeSection }) {
 
         {/* Social */}
         <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-          {[["GH", "https://github.com"], ["LI", "https://linkedin.com"], ["EM", `mailto:${ME.email}`]].map(([label, href]) => (
+          {[["GH", "https://github.com"], ["LI", "https://linkedin.com"],["LT", "https://leetcode.com/u/EvanBinu17/"], ["EM", `mailto:${ME.email}`]].map(([label, href]) => (
             <a key={label} href={href} style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.2em", color: "var(--fg-muted)", textDecoration: "none", transition: "color 0.2s" }}
               onMouseEnter={e => e.currentTarget.style.color = "var(--accent)"}
               onMouseLeave={e => e.currentTarget.style.color = "var(--fg-muted)"}>
