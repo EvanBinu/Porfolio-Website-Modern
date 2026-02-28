@@ -26,17 +26,32 @@ export function Education() {
               <Label>Thesis</Label>
               <p style={{ fontSize: 14, color: "var(--fg-secondary)", marginTop: 8, lineHeight: 1.65 }}>{edu.thesis}</p>
             </div>
-            <div>
-              <Label>Honors</Label>
-              <div style={{ marginTop: 12, display: "flex", flexDirection: "column", gap: 8 }}>
-                {edu.honors.map((h, i) => (
-                  <div key={i} style={{ display: "flex", gap: 12, alignItems: "center" }}>
-                    <span style={{ color: "var(--accent)", fontFamily: "var(--font-mono)", fontSize: 10 }}>—</span>
-                    <span style={{ fontSize: 13, color: "var(--fg-secondary)" }}>{h}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {edu.honors &&
+                edu.honors.some(h => h && h.toLowerCase() !== "nill") && (
+                    <div>
+                    <Label>Honors</Label>
+                    <div style={{ marginTop: 12, display: "flex", flexDirection: "column", gap: 8 }}>
+                        {edu.honors
+                        .filter(h => h && h.toLowerCase() !== "nill")
+                        .map((h, i) => (
+                            <div key={i} style={{ display: "flex", gap: 12, alignItems: "center" }}>
+                            <span
+                                style={{
+                                color: "var(--accent)",
+                                fontFamily: "var(--font-mono)",
+                                fontSize: 10
+                                }}
+                            >
+                                —
+                            </span>
+                            <span style={{ fontSize: 13, color: "var(--fg-secondary)" }}>
+                                {h}
+                            </span>
+                            </div>
+                        ))}
+                    </div>
+                    </div>
+                )}
           </div>
         </div>
       </FadeIn>

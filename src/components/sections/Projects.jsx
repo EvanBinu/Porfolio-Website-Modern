@@ -24,7 +24,13 @@ export function Projects() {
               </div>
               <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
                 <Label>{p.year}</Label>
-                <span style={{ fontFamily: "var(--font-mono)", fontSize: 9, color: p.status === "Live" ? "#22c55e" : p.status === "Open Source" ? "var(--accent)" : "var(--fg-muted)", letterSpacing: "0.15em", textTransform: "uppercase" }}>● {p.status}</span>
+                <span style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 9,
+                    color: p.status === "Live" ? "#22c55e" : "var(--accent)",
+                    letterSpacing: "0.15em",
+                    textTransform: "uppercase"
+                    }}>● {p.status}</span>
               </div>
             </div>
             {/* Desc */}
@@ -42,13 +48,23 @@ export function Projects() {
                 onMouseLeave={e => e.currentTarget.style.color = "var(--fg-muted)"}>
                 Github ↗
               </a>
-              {p.live && (
-                <a href={p.live} style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--fg-muted)", textDecoration: "none", letterSpacing: "0.1em", transition: "color 0.2s" }}
-                  onMouseEnter={e => e.currentTarget.style.color = "var(--accent)"}
-                  onMouseLeave={e => e.currentTarget.style.color = "var(--fg-muted)"}>
-                  Live ↗
+              {p.live && p.live !== "Nill" && (
+                <a
+                    href={p.live}
+                    style={{
+                    fontFamily: "var(--font-mono)",
+                    fontSize: 10,
+                    color: "var(--fg-muted)",
+                    textDecoration: "none",
+                    letterSpacing: "0.1em",
+                    transition: "color 0.2s"
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.color = "var(--accent)"}
+                    onMouseLeave={e => e.currentTarget.style.color = "var(--fg-muted)"}
+                >
+                    Live ↗
                 </a>
-              )}
+                )}
             </div>
           </div>
         </FadeIn>

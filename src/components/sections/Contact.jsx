@@ -14,8 +14,7 @@ export function Contact() {
               </h2>
             </div>
             <p style={{ fontSize: 15, color: "var(--fg-secondary)", lineHeight: 1.7, marginBottom: 32 }}>
-              I'm currently open to senior engineering roles and selective consulting. If you have an interesting problem, let's talk.
-            </p>
+Actively seeking Software Engineering roles focused on building scalable, impactful systems. Open to meaningful challenges and collaborations.            </p>
             <a href={`mailto:${ME.email}`}
               style={{ display: "inline-flex", alignItems: "center", gap: 12, padding: "14px 32px", background: "var(--fg)", color: "var(--bg)", fontFamily: "var(--font-mono)", fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", textDecoration: "none", borderRadius: 4, transition: "all 0.2s" }}
               onMouseEnter={e => { e.currentTarget.style.background = "var(--accent)"; }}
