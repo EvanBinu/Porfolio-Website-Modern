@@ -14,9 +14,11 @@ export function Sidebar({ activeSection }) {
       <div>
         {/* Logo */}
         <div style={{ marginBottom: 48 }}>
-          <div style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 700, letterSpacing: "-0.04em", lineHeight: 1 }}>
-            {ME.initials}<span style={{ color: "var(--accent)" }}>.</span>
-          </div>
+            <a href="#hero" style={{ textDecoration: "none", color: "inherit" }}>
+                <div style={{ fontFamily: "var(--font-display)", fontSize: 22, fontWeight: 700, letterSpacing: "-0.04em", lineHeight: 1 ,cursor: "pointer"}}>
+                    {ME.initials}<span style={{ color: "var(--accent)" }}>.</span>
+                </div>
+            </a>
           <div style={{ fontFamily: "var(--font-mono)", fontSize: 9, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--fg-muted)", marginTop: 4 }}>
             Portfolio
           </div>
