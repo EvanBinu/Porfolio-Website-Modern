@@ -12,7 +12,7 @@ export function About() {
               <p style={{ fontSize: 17, lineHeight: 1.8, color: i === 0 ? "var(--fg)" : "var(--fg-secondary)", marginBottom: 20 }}>{p}</p>
             </FadeIn>
           ))}
-          <FadeIn delay={0.3}>
+          {/* <FadeIn delay={0.3}>
             <div style={{ marginTop: 32, display: "flex", gap: 48 }}>
               {[["5+", "Years"], ["50+", "Projects"], ["12k", "Stars"]].map(([n, l]) => (
                 <div key={l}>
@@ -21,7 +21,7 @@ export function About() {
                 </div>
               ))}
             </div>
-          </FadeIn>
+          </FadeIn> */}
         </div>
 
         {/* Right col: compact info */}

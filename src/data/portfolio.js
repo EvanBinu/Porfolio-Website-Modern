@@ -1,53 +1,51 @@
 export const ME = {
   name: "Evan Binu Chirayath",
   initials: "EB",
-  role: "Full‑Stack Engineer",
+  role: "Software Engineer",
   subRole: "& AI Systems Builder",
-  location: "San Francisco, CA",
+  location: "Chalakudy, India",
   available: true,
   email: "evanbinu17@gmail.com",
   github: "github.com/EvanBinu",
   linkedin: "linkedin.com/in/EvanBinu17",
-  tagline: "I build the systems that power products people love — from the database to the pixel.",
-  about: [
-    "I'm an engineer who works across the full stack, with a particular focus on AI-powered infrastructure and developer tooling. I've spent the last 5 years shipping at companies where speed and quality both matter.",
-    "I care deeply about code that's readable, interfaces that feel inevitable, and systems that scale without drama. Currently at Anthropic working on internal tooling for researchers.",
-  ],
+  tagline: "I build scalable, intelligent systems — solving complex problems from the infrastructure layer to the user interface.",
+
+    about: [
+    "I'm a full-stack engineer with a strong foundation in cloud computing, containerized systems, and AI-driven applications. My work spans React and Flutter frontends, Flask-based backends, and modern DevOps workflows using Docker and cloud platforms — always grounded in strong problem-solving fundamentals.",
+    
+    "I focus on designing reliable, scalable systems while actively sharpening my problem-solving skills through data structures, algorithms, and real-world engineering challenges. Alongside application development, I explore Agentic AI and deep learning to build intelligent, autonomous solutions with clean architecture and performance at their core.",
+    ]
+,
   skills: [
-    { cat: "Frontend", list: ["React", "TypeScript", "Next.js", "Tailwind", "Framer Motion", "WebGL"] },
-    { cat: "Backend", list: ["Node.js", "Python", "FastAPI", "GraphQL", "PostgreSQL", "Redis"] },
-    { cat: "AI / ML", list: ["LangChain", "OpenAI API", "PyTorch", "Pinecone", "RAG pipelines"] },
-    { cat: "Infra", list: ["Docker", "K8s", "AWS", "Terraform", "GitHub Actions", "Vercel"] },
+    { cat: "Frontend", list: ["React", "Next.js", "Tailwind"] },
+    { cat: "Backend", list: ["Node.js", "Python", "FastAPI", "PostgreSQL"] },
+    { cat: "AI / ML", list: ["LangChain", "OpenAI API", "PyTorch"] },
+    { cat: "Infra", list: ["Docker", "GitHub Actions", "Vercel","Streamlit"] },
   ],
   experience: [
     {
-      company: "Anthropic",
-      role: "Senior Software Engineer",
-      period: "2023 — Present",
-      type: "Full-time",
-      desc: "Lead development of internal research tooling. Architected a real-time evaluation pipeline reducing latency by 60%. Collaborate cross-functionally on model deployment infrastructure.",
-    },
-    {
-      company: "Vercel",
-      role: "Software Engineer",
-      period: "2021 — 2023",
-      type: "Full-time",
+      company: "AECOM Consortium",
+      role: "App Developer",
+      period: "July 2024– Present",
+      type: "Internship",
       desc: "Contributed to Next.js App Router. Built edge middleware features shipped to 500k+ developers. Improved CI build performance by 40% through caching optimizations.",
     },
     {
-      company: "Stripe",
-      role: "Frontend Engineer",
-      period: "2019 — 2021",
-      type: "Full-time",
-      desc: "Rebuilt the Stripe Dashboard core UI with React and TypeScript. Created a design system used across 15 product teams. Reduced page load by 35% via code splitting.",
+      company: "NetVenture Digital Solutions",
+      role: "Web Developer",
+      period: "Aug 2024– Sept 2024",
+      type: "Internship",
+      desc: "Designed no-code websites and managed client requirements to deliver tailored solutions. Strengthened skills in communication, project coordination, and digital solution design.",
     },
+    
     {
-      company: "Freelance",
-      role: "Independent Consultant",
-      period: "2017 — 2019",
-      type: "Contract",
-      desc: "Delivered full-stack web applications for 12+ startups. Specialized in rapid prototyping and MVP development for Y Combinator-backed companies.",
+      company: "ICM Computers",
+      role: "Assistant Technician",
+      period: "May 2023– June 2023",
+      type: "Apprenticeship",
+      desc: "Diagnosed and repaired corrupted systems, faulty drives, and hardware components.  Installed and configured new computers and peripheral devices for clients.",
     },
+    
   ],
   projects: [
     {
@@ -103,13 +101,13 @@ export const ME = {
     { icon: "04", title: "4.2k GitHub Stars", body: "Open source project reached 4.2k stars in 90 days. Featured on GitHub Trending." },
   ],
   education: {
-    school: "Massachusetts Institute of Technology",
-    short: "MIT",
-    degree: "B.S. Computer Science & Artificial Intelligence",
-    period: "2015 — 2019",
-    gpa: "3.9 / 4.0",
-    thesis: "Efficient Attention Mechanisms in Sparse Transformers",
-    honors: ["Dean's List (all semesters)", "ACM ICPC Regional Finalist", "Grace Hopper Scholar"],
+    school: "Amrita Vishwa Vidyapeetham",
+    short: "AVV",
+    degree: "B.Tech. Computer Science and Engineering",
+    period: "2023 — 2027",
+    cgpa: "9.48 / 10.0",
+    thesis: "",
+    honors: [""],
   },
 };
 

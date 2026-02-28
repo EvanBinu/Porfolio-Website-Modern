@@ -16,8 +16,8 @@ export function Education() {
             <Label>{edu.period}</Label>
             <div style={{ marginTop: 20, display: "flex", gap: 24 }}>
               <div>
-                <div style={{ fontFamily: "var(--font-display)", fontSize: 28, fontWeight: 800, letterSpacing: "-0.03em" }}>{edu.gpa}</div>
-                <Label>GPA</Label>
+                <div style={{ fontFamily: "var(--font-display)", fontSize: 28, fontWeight: 800, letterSpacing: "-0.03em" }}>{edu.cgpa}</div>
+                <Label>CGPA</Label>
               </div>
             </div>
           </div>
