@@ -34,10 +34,11 @@ export function About() {
                 ["Email", ME.email],
                 ["GitHub", ME.github],
                 ["LinkedIn", ME.linkedin],
+                ["LeetCode", ME.leetcode]
               ].map(([k, v], i) => (
                 <div key={k} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "14px 20px", borderBottom: i < 4 ? "1px solid var(--border)" : "none", background: i % 2 === 0 ? "transparent" : "var(--bg-secondary)" }}>
                   <Label>{k}</Label>
-                  <span style={{ fontFamily: "var(--font-mono)", fontSize: 11, color: k === "Status" ? "#22c55e" : "var(--fg-secondary)" }}>{v}</span>
+                {k==="GitHub"||k==="LinkedIn"||k==="LeetCode"?<a href={v} target="_blank" rel="noopener noreferrer" style={{fontFamily:"var(--font-mono)",fontSize:11,color: "var(--accent)",textDecoration:"none",border:"1px solid var(--border)",padding:"4px 10px",borderRadius:4}}>{v}</a>:<span style={{fontFamily:"var(--font-mono)",fontSize:11,color:k==="Status"?"#22c55e":"var(--fg-secondary)"}}>{v}</span>}
                 </div>
               ))}
             </div>

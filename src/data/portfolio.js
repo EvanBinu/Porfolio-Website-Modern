@@ -6,9 +6,9 @@ export const ME = {
   location: "Chalakudy, India",
   available: true,
   email: "evanbinu17@gmail.com",
-  github: "github.com/EvanBinu",
-  linkedin: "linkedin.com/in/EvanBinu17",
-  leetcode: "leetcode.com/u/EvanBinu17/",
+  github: "https://github.com/EvanBinu",
+  linkedin: "https://linkedin.com/in/EvanBinu17",
+  leetcode: "https://leetcode.com/u/EvanBinu17/",
   tagline: "I build scalable, intelligent systems — solving complex problems from the infrastructure layer to the user interface.",
 
     about: [

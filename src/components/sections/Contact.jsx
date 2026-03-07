@@ -38,15 +38,8 @@ Actively seeking Software Engineering roles focused on building scalable, impact
                 }}
                 >
                 <Label>{k}</Label>
-                <span
-                    style={{
-                    fontFamily: "var(--font-mono)",
-                    fontSize: 11,
-                    color: "var(--fg-secondary)"
-                    }}
-                >
-                    {v}
-                </span>
+                {k==="GitHub"||k==="LinkedIn"||k==="LeetCode"?<a href={v} target="_blank" rel="noopener noreferrer" style={{fontFamily:"var(--font-mono)",fontSize:11,color: "var(--accent)",textDecoration:"none",border:"1px solid var(--border)",padding:"4px 10px",borderRadius:4}}>{v}</a>:<span style={{fontFamily:"var(--font-mono)",fontSize:11,color:k==="Status"?"#22c55e":"var(--fg-secondary)"}}>{v}</span>}
+
                 </div>
             ))}
         </div>
